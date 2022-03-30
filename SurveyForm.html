@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Beverage Preference Survey by Shikha Chamoli
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+		    background-color: azure;
+			background-image: url("cafeShop.jpg");
+			font-family: Verdana;
+			text-align: center;
+		}
+		
+		/* Styling h1-control Class */
+		.h1-control {
+			text-align: center;
+			color:azure; font-size:21px;
+			font-style: Normal; font-family: Arial Narrow, sans-serif; font-weight:275;
+			word-spacing: .5px; letter-spacing:.5px; 
+			position: absolute;
+			top: 5%; right: 45%;
+			transform: translate(50%,-50%);
+			text-shadow: .5px .5px .5px goldenrod,
+			1px 2px 1px #919191,
+			1px 30px 60px rgba(16,16,16,0.4);
+			}
+		.h1-control span {
+			  line-height:2em; padding-bottom:15px;
+			  text-transform: none;
+			  font-size:.7em;
+			  font-weight: bold;
+			  font-style: oblique; font-family: "Didot",serif;
+			  color:goldenrod; letter-spacing:-0.005em; word-spacing:1px;
+			  letter-spacing:none;
+			}
+		.h1-control:after, .title-control:before {
+			  position: absolute;
+			  left: 0;
+			  bottom: 0;
+			  width: 45px;
+			  height: 4px;
+			  content: "";
+			  right: 45px; 
+			  margin:auto;
+			  background-color: #ccc;
+			}
+		.h1-control:before { 
+			  background-color:#d78b8b;
+			  left:45px; width:90px;
+			}
+
+		
+		/* Styling the Form (Color, Padding, Shadow) */
+		
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button 
+		.button_h {
+			color: azure;
+			border: 0.2px solid;
+			border: 0.2px solid;
+			font-family: inherit;
+			font-size: 21px;
+			display: flex;
+			width: 20%;
+			
+		} */
+	</style>
+</head>
+
+<body>
+	<div class="h1-control">
+	  <h1>Beverage Preference Survey 
+		<span>by Cafe Shikha</span>
+	  </h1>
+	</div>
+	<!-- Create Form -->
+	<form id="form">
+	<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Full Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email id" />
+		</div>
+		
+		<div class="form-control">
+			<label>
+				Age range 
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">18-26</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">26-30</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">31-40</input>
+			</label>
+			<label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="recommed">41-50</input>
+			</label>
+			<label for="recommed-5">
+				<input type="radio"
+					id="recommed-5"
+					name="recommed">51-60</input>
+			</label>
+			<label for="recommed-6">
+				<input type="radio"
+					id="recommed-6"
+					name="recommed">61 and above</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="retired">Retired</option>
+
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				How many beverages do you have every day? 
+			</label>
+
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+
+				<option value="More than 3">More than three</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>Beverages you like
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Milk Tea</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Green Tea</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Earl Grey</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Mocha</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Cappuccino</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Cold Brew Coffee</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Espresso</input></label>
+			<label for="inp-8">
+				<input type="checkbox"
+					name="inp">Irish Coffee</input></label>
+			<label for="inp-9">
+				<input type="checkbox"
+					name="inp">Macchiato</input></label>
+			<label for="inp-10">
+				<input type="checkbox"
+					name="inp">Americano</input></label>
+			<label for="inp-11">
+				<input type="checkbox"
+					name="inp">Iced Coffee</input></label>	
+			<label for="inp-12">
+				<input type="checkbox"
+					name="inp">Latte</input></label>
+			<label for="inp-13">
+				<input type="checkbox"
+					name="inp">Other</input></label>					
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any other beverages that you like or prefer
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<div class = "button_h"; style="text-align:center">
+		  <button>Submit</button>
+		</div>
+
+
+	</form>
+</body>
+
+</html>
